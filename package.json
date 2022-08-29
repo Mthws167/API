@@ -1,19 +1,29 @@
 {
-  "name": "api",
+  "name": "ifio-api-2022",
   "version": "1.0.0",
   "description": "Projeto para fins didáticos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "nodemon App.js "
   },
   "repository": {
     "type": "git",
-    "url": "(http://github.com/Mthws167/API.git)"
+    "url": "git+https://github.com/terenciani/ifio-api-2022.git"
   },
-  "author": "Mthws167",
+  "author": "Marcelo F. Terenciani",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terenciani/ifio-api-2022/issues"
+  },
+  "homepage": "https://github.com/terenciani/ifio-api-2022#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1",
+    "mongoose": "^6.5.2",
     "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }

@@ -8,7 +8,6 @@ class FabricaConexao{
        let{db}=global.config;
        let options = {
         keepAlive:true,
-        userNewUrlParser:true,
         useUnifiedTopology:true,
         connectTimeoutMS:3000
        };
@@ -18,6 +17,7 @@ class FabricaConexao{
        }else{
         url = `mongodb+srv://${db.username}:${db.password}@${db.url}/${db.name}?retryWrites=true&w=majority`;
        }
+       console.log(url)
        return mongoose.connect(url,options)
     }
 
